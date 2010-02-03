@@ -189,3 +189,114 @@ Processing ServiceMastersController#show (for 127.0.0.1 at 2010-02-02 19:06:52) 
 Rendering template within layouts/service_masters
 Rendering service_masters/show
 Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/service_masters/1]
+
+
+Processing ServiceMastersController#edit (for 127.0.0.1 at 2010-02-02 19:08:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mServiceMaster Load (0.0ms)[0m   [0mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 1) [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/edit
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/service_masters/1/edit]
+
+
+Processing ServiceMastersController#index (for 127.0.0.1 at 2010-02-02 19:08:53) [GET]
+  [4;36;1mServiceMaster Load (1.0ms)[0m   [0;1mSELECT * FROM "service_masters" [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/index
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://localhost/service_masters]
+
+
+Processing ServiceMastersController#new (for 127.0.0.1 at 2010-02-02 19:09:00) [GET]
+Rendering template within layouts/service_masters
+Rendering service_masters/new
+Completed in 28ms (View: 15, DB: 0) | 200 OK [http://localhost/service_masters/new]
+
+
+Processing ServiceMastersController#create (for 127.0.0.1 at 2010-02-02 19:09:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"+LzFyJkpt1FH6VTKovUek8YsewgkGInCX5lDIILeWBk=", "service_master"=>{"total_cost"=>"", "servicer"=>"", "status_code"=>"N", "hrs_actual"=>"", "hrs_est"=>"2.0", "service_desc"=>"test2"}}
+  [4;35;1mServiceMaster Create (0.0ms)[0m   [0mINSERT INTO "service_masters" ("total_cost", "updated_at", "servicer", "hrs_actual", "status_code", "service_desc", "hrs_est", "created_at") VALUES(NULL, '2010-02-03 01:09:18', '', NULL, 'N', 'test2', 2.0, '2010-02-03 01:09:18')[0m
+Redirected to http://localhost:3000/service_masters/2
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/service_masters]
+
+
+Processing ServiceMastersController#show (for 127.0.0.1 at 2010-02-02 19:09:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mServiceMaster Load (1.0ms)[0m   [0;1mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 2) [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/show
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/service_masters/2]
+
+
+Processing ServiceMastersController#index (for 127.0.0.1 at 2010-02-02 19:09:21) [GET]
+  [4;35;1mServiceMaster Load (1.0ms)[0m   [0mSELECT * FROM "service_masters" [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/index
+Completed in 45ms (View: 37, DB: 1) | 200 OK [http://localhost/service_masters]
+
+
+Processing ServiceMastersController#destroy (for 127.0.0.1 at 2010-02-02 19:09:25) [DELETE]
+  Parameters: {"authenticity_token"=>"+LzFyJkpt1FH6VTKovUek8YsewgkGInCX5lDIILeWBk=", "id"=>"2"}
+  [4;36;1mServiceMaster Load (1.0ms)[0m   [0;1mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 2) [0m
+  [4;35;1mServiceMaster Destroy (1.0ms)[0m   [0mDELETE FROM "service_masters" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/service_masters
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/service_masters/2]
+
+
+Processing ServiceMastersController#index (for 127.0.0.1 at 2010-02-02 19:09:25) [GET]
+  [4;36;1mServiceMaster Load (1.0ms)[0m   [0;1mSELECT * FROM "service_masters" [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/service_masters]
+
+
+Processing ServiceMastersController#show (for 127.0.0.1 at 2010-02-02 19:09:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mServiceMaster Load (2.0ms)[0m   [0mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 1) [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/show
+Completed in 36ms (View: 10, DB: 2) | 200 OK [http://localhost/service_masters/1]
+
+
+Processing ServiceMastersController#edit (for 127.0.0.1 at 2010-02-02 19:09:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mServiceMaster Load (1.0ms)[0m   [0;1mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 1) [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/edit
+Completed in 30ms (View: 17, DB: 1) | 200 OK [http://localhost/service_masters/1/edit]
+
+
+Processing ServiceMastersController#update (for 127.0.0.1 at 2010-02-02 19:09:39) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"+LzFyJkpt1FH6VTKovUek8YsewgkGInCX5lDIILeWBk=", "id"=>"1", "service_master"=>{"total_cost"=>"", "servicer"=>"", "status_code"=>"A", "hrs_actual"=>"", "hrs_est"=>"1", "service_desc"=>"test1"}}
+  [4;35;1mServiceMaster Load (1.0ms)[0m   [0mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 1) [0m
+  [4;36;1mServiceMaster Update (1.0ms)[0m   [0;1mUPDATE "service_masters" SET "status_code" = 'A', "updated_at" = '2010-02-03 01:09:39' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/service_masters/1
+Completed in 28ms (DB: 2) | 302 Found [http://localhost/service_masters/1]
+
+
+Processing ServiceMastersController#show (for 127.0.0.1 at 2010-02-02 19:09:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mServiceMaster Load (1.0ms)[0m   [0mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 1) [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/show
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/service_masters/1]
+
+
+Processing ServiceMastersController#show (for 127.0.0.1 at 2010-02-02 19:10:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mServiceMaster Load (0.0ms)[0m   [0;1mSELECT * FROM "service_masters" WHERE ("service_masters"."id" = 1) [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/show
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/service_masters/1]
+
+
+Processing ServiceMastersController#index (for 127.0.0.1 at 2010-02-02 19:10:54) [GET]
+  [4;35;1mServiceMaster Load (0.0ms)[0m   [0mSELECT * FROM "service_masters" [0m
+Rendering template within layouts/service_masters
+Rendering service_masters/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/service_masters]
+
+
+Processing ServiceMastersController#new (for 127.0.0.1 at 2010-02-02 19:10:58) [GET]
+Rendering template within layouts/service_masters
+Rendering service_masters/new
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/service_masters/new]
