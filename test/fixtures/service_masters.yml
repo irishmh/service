@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  service_desc: MyString
+  hrs_est: 9.99
+  hrs_actual: 9.99
+  servicer: MyString
+  total_cost: 9.99
+  status_code: 
+
+two:
+  service_desc: MyString
+  hrs_est: 9.99
+  hrs_actual: 9.99
+  servicer: MyString
+  total_cost: 9.99
+  status_code: 

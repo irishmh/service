@@ -1,0 +1,30 @@
+<h1>Listing service_masters</h1>
+
+<table>
+  <tr>
+    <th>Service desc</th>
+    <th>Hrs est</th>
+    <th>Hrs actual</th>
+    <th>Servicer</th>
+    <th>Total cost</th>
+    <th>Status code</th>
+  </tr>
+
+<% @service_masters.each do |service_master| %>
+  <tr>
+    <td><%=h service_master.service_desc %></td>
+    <td><%=h service_master.hrs_est %></td>
+    <td><%=h service_master.hrs_actual %></td>
+    <td><%=h service_master.servicer %></td>
+    <td><%=h service_master.total_cost %></td>
+    <td><%=h service_master.status_code %></td>
+    <td><%= link_to 'Show', service_master %></td>
+    <td><%= link_to 'Edit', edit_service_master_path(service_master) %></td>
+    <td><%= link_to 'Destroy', service_master, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New service_master', new_service_master_path %>

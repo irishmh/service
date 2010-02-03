@@ -1,0 +1,33 @@
+<p>
+  <b>Service desc:</b>
+  <%=h @service_master.service_desc %>
+</p>
+
+<p>
+  <b>Hrs est:</b>
+  <%=h @service_master.hrs_est %>
+</p>
+
+<p>
+  <b>Hrs actual:</b>
+  <%=h @service_master.hrs_actual %>
+</p>
+
+<p>
+  <b>Servicer:</b>
+  <%=h @service_master.servicer %>
+</p>
+
+<p>
+  <b>Total cost:</b>
+  <%=h @service_master.total_cost %>
+</p>
+
+<p>
+  <b>Status code:</b>
+  <%=h @service_master.status_code %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_master_path(@service_master) %> |
+<%= link_to 'Back', service_masters_path %>
