@@ -242,4 +242,5 @@ vendor
   If the app has frozen rails, those gems also go here, under vendor/rails/.
   This directory is in the load path.
   
----------2010-02-16 MH added comment per 1st github deployment  
+---------2010-02-16 MH added comment per 1st github deployment
+---------same day 2nd change
